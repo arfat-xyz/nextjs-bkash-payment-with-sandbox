@@ -13,6 +13,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <link rel="icon" href="arfat-rahman.jpg" type="image/jpg" sizes="50" />
       <body className={inter.className}>
         <Toaster />
         {children}

@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import React, { FormEvent, useEffect, useState } from "react";
 import toast from "react-hot-toast";
@@ -53,13 +54,20 @@ const FormComponent = () => {
       <div className="flex min-h-screen flex-col justify-center items-center px-6 py-12 lg:px-8">
         <div className="p-4 rounded-lg w-full md:w-80  border  shadow-inner">
           <div className="sm:mx-auto sm:w-full sm:max-w-sm w-8 h-8 overflow-hidden rounded-full">
-            <Image
-              width={50}
-              height={50}
-              className="mx-auto h-8 w-8 rounded-full mb-4"
-              src="/arfat-rahman.jpg"
-              alt="arfatur Rahman"
-            />
+            <Link
+              href={`https://arfat.app`}
+              target="_black"
+              title="Arfatur Rahman"
+            >
+              {" "}
+              <Image
+                width={50}
+                height={50}
+                className="mx-auto h-8 w-8 rounded-full mb-4"
+                src="/arfat-rahman.jpg"
+                alt="arfatur Rahman"
+              />
+            </Link>
           </div>
           <div className="w-full">
             <h1 className="text-3xl text-center mb-2">Practice Sandbox</h1>
@@ -101,6 +109,14 @@ const FormComponent = () => {
                   Pay with bkash
                 </button>
               </div>
+              <p className="text-blue-700 underline mt-3 text-center">
+                <Link
+                  href={`https://github.com/arfat-xyz/nextjs-bkash-payment-with-sandbox`}
+                  target="_blank"
+                >
+                  Click for code
+                </Link>
+              </p>
             </form>
           </div>
         </div>

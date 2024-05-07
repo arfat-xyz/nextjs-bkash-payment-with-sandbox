@@ -1,3 +1,4 @@
+"use client";
 import CallBackComponent from "@/component/callback-component";
 import React, { Suspense } from "react";
 

@@ -31,9 +31,7 @@ const FormComponent = () => {
     });
     if (!response?.ok) {
       if (response.status === 409) {
-        return toast.error(
-          `You already buy a plan` || "Please refresh the page and try again."
-        );
+        return toast.error("Please refresh the page and try again.");
       }
       const errorMessasge = await response.json();
       return toast.error(
